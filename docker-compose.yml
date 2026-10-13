@@ -1,0 +1,9 @@
+services:
+  apache:
+    image: httpd:2.4-alpine
+    ports:
+      - "8080:80"
+    volumes:
+      # ./app no computador → diretório público do Apache no container.
+      - ./app:/usr/local/apache2/htdocs:ro
+    restart: unless-stopped

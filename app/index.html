@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minhas tarefas | Apache</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><span class="badge">APACHE · DOCKER</span><h1>Minhas tarefas</h1><p>Organize o seu dia, uma tarefa de cada vez.</p></header>
+    <form id="form">
+      <label for="title">Nova tarefa</label>
+      <div class="entry"><input id="title" maxlength="160" placeholder="O que você precisa fazer?" required autocomplete="off"><button>Adicionar</button></div>
+    </form>
+    <nav aria-label="Filtrar tarefas">
+      <button type="button" data-filter="all" aria-pressed="true">Todas</button>
+      <button type="button" data-filter="pending" aria-pressed="false">Pendentes</button>
+      <button type="button" data-filter="done" aria-pressed="false">Concluídas</button>
+    </nav>
+    <p id="summary" role="status"></p>
+    <ul id="tasks"></ul>
+    <p id="empty">Nenhuma tarefa aqui. Que tal adicionar uma?</p>
+    <p id="error" role="alert" hidden></p>
+    <footer>Os dados ficam salvos neste navegador. Servido pelo Apache httpd.</footer>
+  </main>
+</body>
+</html>
