@@ -72,17 +72,7 @@ No Chromium, foram verificados adicionar, concluir, filtrar, excluir,
 persistir após recarregar, exibir conteúdo digitado como texto e não ultrapassar
 a largura da tela de 375 pixels. A sintaxe JavaScript e o YML também foram validados.
 
-## Publicar no GitHub
-
-Crie um repositório vazio no GitHub e execute na pasta do projeto,
-substituindo USUARIO e REPOSITORIO pelos valores reais:
-
-```sh
-git init -b main
-git add .
-git commit -m "Adiciona aplicação web com Apache e Docker Compose"
-git remote add origin https://github.com/BigodeMarine/Container-Aplica-o-WEB.git
-git push -u origin main
+ush -u origin main
 ```
 
 Publicar os arquivos no GitHub não executa o container. Para executar em outro
